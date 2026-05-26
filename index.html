@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Haddazah Preshy Health Foundation - Empowering Women, Transforming Communities. Support women's empowerment initiatives through education, vocational training, and advocacy.">
+    <meta name="keywords" content="women empowerment, NGO, women's health, community support, women's education">
+    <title>Haddazah Preshy Health Foundation - Empowering Women, Transforming Communities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-rose-600">Haddazah Preshy</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-rose-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-rose-600 transition">About Us</a>
+                    <a href="impact.html" class="text-gray-700 hover:text-rose-600 transition">Our Impact</a>
+                    <a href="donate.html" class="text-gray-700 hover:text-rose-600 transition">Donate</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-rose-600 transition">Contact</a>
+                </div>
+                <button class="md:hidden hamburger-btn" id="hamburger">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-rose-600">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-rose-600">About Us</a>
+                <a href="impact.html" class="block py-2 text-gray-700 hover:text-rose-600">Our Impact</a>
+                <a href="donate.html" class="block py-2 text-gray-700 hover:text-rose-600">Donate</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-rose-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section class="hero-bg-home relative text-white py-20 md:py-32 overflow-hidden">
+        <!-- Background Image Layer -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style="background-image: url('assets/images/hero-home.jpg');">
+        </div>
+        <!-- Overlay for text readability -->
+        <div class="absolute inset-0 bg-gradient-to-r from-rose-500/85 to-pink-600/85"></div>
+
+        <!-- Content -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6">Empowering Women, Transforming Communities</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+                At Haddazah Preshy Health Foundation (SAVE HER COMMUNITY), we believe every woman deserves the
+                opportunity to thrive. Through education, advocacy, and support, we're building a future where women
+                lead with confidence and dignity.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="donate.html"
+                    class="bg-white text-rose-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Donate Now
+                </a>
+                <a href="about.html"
+                    class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-rose-600 transition">
+                    Learn Our Story
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-4xl mb-4"></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Our Mission</h3>
+                    <p class="text-gray-600">To empower women and girls through education, vocational training, and
+                        advocacy, enabling them to achieve economic independence and lead fulfilling lives.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-4xl mb-4"></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Our Vision</h3>
+                    <p class="text-gray-600">A world where women and girls have equal access to opportunities,
+                        resources, and decision-making power in all spheres of life.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-4xl mb-4"></div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Our Values</h3>
+                    <p class="text-gray-600">Equality, Education, Economic Independence, Safety, Dignity, and Community
+                        – guiding every action we take.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="py-16 bg-rose-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Impact So Far</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="text-5xl font-bold mb-2">500+</p>
+                    <p class="text-lg">Women Trained</p>
+                </div>
+                <div>
+                    <p class="text-5xl font-bold mb-2">200+</p>
+                    <p class="text-lg">Jobs Created</p>
+                </div>
+                <div>
+                    <p class="text-5xl font-bold mb-2">1000+</p>
+                    <p class="text-lg">Lives Impacted</p>
+                </div>
+                <div>
+                    <p class="text-5xl font-bold mb-2">50+</p>
+                    <p class="text-lg">Community Programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Make a Difference?</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                Join us in our mission to empower women. Whether through donations, volunteering, or spreading
+                awareness, your contribution matters.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="donate.html"
+                    class="bg-rose-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-rose-700 transition">
+                    Support Us
+                </a>
+                <a href="contact.html"
+                    class="bg-gray-200 text-gray-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-300 transition">
+                    Get Involved
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Haddazah Preshy</h3>
+                    <p class="text-gray-400">Empowering women, transforming communities.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="impact.html" class="hover:text-white transition">Our Impact</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="donate.html" class="hover:text-white transition">Donate</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Haddazah Preshy Health Foundation (SAVE HER COMMUNITY). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

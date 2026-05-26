@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Donate to Haddazah Preshy Health Foundation and support women's empowerment initiatives. Safe and secure donations via bank transfer.">
+    <title>Donate - Haddazah Preshy Health Foundation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-rose-600">Haddazah Preshy</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-rose-600 transition">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-rose-600 transition">About Us</a>
+                    <a href="impact.html" class="text-gray-700 hover:text-rose-600 transition">Our Impact</a>
+                    <a href="donate.html" class="text-rose-600 font-semibold">Donate</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-rose-600 transition">Contact</a>
+                </div>
+                <button class="md:hidden hamburger-btn" id="hamburger">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-rose-600">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-rose-600">About Us</a>
+                <a href="impact.html" class="block py-2 text-gray-700 hover:text-rose-600">Our Impact</a>
+                <a href="donate.html" class="block py-2 text-rose-600 font-semibold">Donate</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-rose-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header with Background Image -->
+    <section class="hero-bg-donate relative text-white py-16 overflow-hidden">
+        <!-- Background Image Layer -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style="background-image: url('assets/images/hero-donate.jpg');">
+        </div>
+        <!-- Overlay for text readability -->
+        <div class="absolute inset-0 bg-gradient-to-r from-rose-500/85 to-pink-600/85"></div>
+
+        <!-- Content -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Support Our Mission</h1>
+            <p class="text-lg">Your donation directly impacts the lives of women and girls</p>
+        </div>
+    </section>
+
+    <!-- Donation Impact -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">How Your Donation Helps</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <p class="text-3xl font-bold text-rose-600 mb-4">₦5,000</p>
+                    <p class="text-gray-600 font-semibold mb-4">Provides basic literacy training for one woman</p>
+                    <p class="text-gray-500">Helps a woman gain foundational reading and writing skills</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <p class="text-3xl font-bold text-rose-600 mb-4">₦15,000</p>
+                    <p class="text-gray-600 font-semibold mb-4">Vocational skills training scholarship</p>
+                    <p class="text-gray-500">Covers training materials for sewing, weaving, or business skills</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <p class="text-3xl font-bold text-rose-600 mb-4">₦25,000</p>
+                    <p class="text-gray-600 font-semibold mb-4">Startup resources for a graduate</p>
+                    <p class="text-gray-500">Provides initial capital and tools to launch a small business</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Donation Form -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Make a Donation</h2>
+                    <form id="donationForm" class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Donor Name</label>
+                            <input type="text" name="donorName" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                                placeholder="Your full name">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email Address</label>
+                            <input type="email" name="email" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                                placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                            <input type="tel" name="phone" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                                placeholder="Your phone number">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Donation Amount (₦)</label>
+                            <input type="number" name="amount" required min="1000"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                                placeholder="Enter amount in Naira">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Donation Type</label>
+                            <select name="donationType"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600">
+                                <option value="general">General Contribution</option>
+                                <option value="education">Education Programs</option>
+                                <option value="vocational">Vocational Training</option>
+                                <option value="advocacy">Advocacy & Support</option>
+                                <option value="emergency">Emergency Support</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Message (Optional)</label>
+                            <textarea name="message" rows="3"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-600"
+                                placeholder="Add a personal message or comment"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-rose-600 text-white py-3 rounded-lg font-semibold hover:bg-rose-700 transition">
+                            Proceed to Payment
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Bank Transfer Details -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Bank Transfer Details</h2>
+                    <div class="bg-rose-50 p-8 rounded-lg border-2 border-rose-200">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">How to Donate via Bank Transfer</h3>
+
+                        <div class="space-y-6">
+                            <div class="bg-white p-6 rounded-lg">
+                                <h4 class="font-bold text-gray-800 mb-3">Bank Name</h4>
+                                <p class="text-gray-600 text-lg">Access Bank Nigeria</p>
+                            </div>
+
+                            <div class="bg-white p-6 rounded-lg">
+                                <h4 class="font-bold text-gray-800 mb-3">Account Name</h4>
+                                <p class="text-gray-600 text-lg">Haddazah Preshy Health Foundation</p>
+                            </div>
+
+                            <div class="bg-white p-6 rounded-lg">
+                                <h4 class="font-bold text-gray-800 mb-3">Account Number</h4>
+                                <p class="text-gray-600 text-lg font-mono">1234567890</p>
+                                <p class="text-sm text-gray-500 mt-2">Please copy this exactly when transferring</p>
+                            </div>
+
+                            <div class="bg-white p-6 rounded-lg">
+                                <h4 class="font-bold text-gray-800 mb-3">Recipient Bank Name</h4>
+                                <p class="text-gray-600 text-lg">044 (Access Bank Code)</p>
+                            </div>
+
+                            <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-lg">
+                                <p class="text-sm text-yellow-800">
+                                    <strong>Important:</strong> After completing your transfer, please fill out the
+                                    donation form and send a confirmation email to
+                                    <strong>donate@haddazahpreshy.org</strong> with your transaction reference number
+                                    for tracking and receipt purposes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Donation Receipt -->
+                    <div class="mt-8 bg-green-50 p-6 rounded-lg border-2 border-green-200">
+                        <h3 class="font-bold text-gray-800 mb-3"> What Happens Next</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <span class="text-green-600 mr-3">✓</span>
+                                <span>We verify your donation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-600 mr-3">✓</span>
+                                <span>Send you a tax receipt</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-600 mr-3">✓</span>
+                                <span>Keep you updated on impact</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-green-600 mr-3">✓</span>
+                                <span>Send monthly newsletters</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Our Commitment to Transparency</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-gray-800 mb-3">Fund Usage</h3>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li>• 70% - Direct program delivery</li>
+                        <li>• 15% - Operations & administration</li>
+                        <li>• 10% - Monitoring & evaluation</li>
+                        <li>• 5% - Fund development</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="font-bold text-gray-800 mb-3">Your Trust</h3>
+                    <p class="text-gray-600 text-sm">
+                        We are committed to using donations responsibly. All funds are managed with integrity and
+                        accountability. Annual financial reports are available upon request.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-rose-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Thank You for Your Support</h2>
+            <p class="text-lg mb-8">
+                Every contribution, no matter the size, makes a measurable difference in the lives of women and girls we
+                serve.
+            </p>
+            <a href="index.html"
+                class="bg-white text-rose-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+                Learn More About Our Work
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Haddazah Preshy</h3>
+                    <p class="text-gray-400">Empowering women, transforming communities.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="impact.html" class="hover:text-white transition">Our Impact</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="donate.html" class="hover:text-white transition">Donate</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Haddazah Preshy Health Foundation (SAVE HER COMMUNITY). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

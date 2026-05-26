@@ -1,0 +1,290 @@
+/* Custom Styles for Haddazah Preshy Health Foundation */
+
+:root {
+    --primary-color: #ec4899;
+    --primary-dark: #be185d;
+    --secondary-color: #f43f5e;
+    --light-bg: #fdf2f8;
+    --gray-light: #f3f4f6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hero Sections with Background Images */
+.hero-bg-home,
+.hero-bg-about,
+.hero-bg-impact,
+.hero-bg-donate,
+.hero-bg-contact {
+    position: relative;
+    background: linear-gradient(to right, rgba(236, 72, 153, 0.85), rgba(244, 63, 94, 0.85));
+    min-height: 300px;
+}
+
+/* Individual hero sections can have different background images */
+.hero-bg-home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.hero-bg-about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.hero-bg-impact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.hero-bg-donate::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.hero-bg-contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* Navigation Styles */
+nav {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.hamburger-btn:hover {
+    opacity: 0.7;
+}
+
+/* Hero Sections */
+.bg-gradient-to-r {
+    background-image: linear-gradient(to right, #ec4899, #f43f5e);
+}
+
+/* Buttons */
+button,
+a.btn,
+.btn {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+a.btn:hover,
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Forms */
+input,
+textarea,
+select {
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
+}
+
+/* Cards */
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* Footer */
+footer {
+    background-color: #111827;
+}
+
+/* Responsive Image */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Animation Classes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-animate] {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Link Styles */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* Utility Classes */
+.text-rose-600 {
+    color: #ec4899;
+}
+
+.bg-rose-600 {
+    background-color: #ec4899;
+}
+
+.bg-rose-700 {
+    background-color: #be185d;
+}
+
+.hover\:bg-rose-700:hover {
+    background-color: #be185d;
+}
+
+.border-rose-600 {
+    border-color: #ec4899;
+}
+
+.border-rose-200 {
+    border-color: #fbcfe8;
+}
+
+/* Print Styles */
+@media print {
+
+    nav,
+    footer {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode styles if needed */
+}
+
+/* ==========================================
+   BACKGROUND IMAGE SETUP INSTRUCTIONS
+   ==========================================
+   
+   Hero sections are ready for background images.
+   Add your images to assets/images/ with these names:
+   
+   - hero-home.jpg    (Homepage hero)
+   - hero-about.jpg   (About Us hero)
+   - hero-impact.jpg  (Our Impact hero)
+   - hero-donate.jpg  (Donation page hero)
+   - hero-contact.jpg (Contact page hero)
+   
+   The gradient overlay with semi-transparent rose/pink
+   will automatically darken the images for text readability.
+   
+   HOW TO USE:
+   1. Save your high-quality images to assets/images/
+   2. Name them as listed above
+   3. The background will display automatically
+   4. Images will be responsive on all devices
+   5. Text remains readable with the overlay effect
+   
+   IMAGE RECOMMENDATIONS:
+   - Resolution: 1920x600px or larger
+   - Format: JPG or PNG
+   - File size: Optimized (under 500KB)
+   - Content: Women empowerment themed
+   - Colors: Complementary to rose/pink theme
+   
+   ========================================== */
