@@ -16,36 +16,6 @@ mobileLinks?.forEach(link => {
     });
 });
 
-// Donation Form Handler with Formspree
-const donationForm = document.getElementById('donationForm');
-if (donationForm) {
-    donationForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(donationForm);
-        const actionUrl = donationForm.getAttribute('action');
-
-        try {
-            const response = await fetch(actionUrl, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-
-            if (response.ok) {
-                alert('Thank you! Your donation request has been received. We will contact you shortly.');
-                donationForm.reset();
-            } else {
-                alert('Oops! There was a problem submitting your form.');
-            }
-        } catch (error) {
-            alert('Oops! There was a problem submitting your form.');
-        }
-    });
-}
-
 // Smooth Scroll for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
